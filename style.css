@@ -159,55 +159,168 @@ ul{list-style:none}
 .acl a:hover{color:var(--or)}
 
 /* =============================================
-   DONATIONS — CARROUSEL INFINI SANS COUPURE
+   DONATIONS — CARROUSEL
    ============================================= */
-.don{background:#fdf8f0;padding:80px 0}
-.don-hd{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;position:relative;z-index:2;padding:52px 0 40px}
-.don-hl{flex:1}
-.don-hr{display:flex;align-items:center;gap:20px;position:relative;z-index:2}
-.don-hr .dba{background:rgba(27,32,48,.85);border-radius:50px;padding:10px 18px}
-.don-hr .dlb{color:#fff;font-size:.85rem}
-.don-hr .av{border-color:rgba(255,255,255,.3)}
-.don-nav{display:flex;gap:10px}
-.don-nb{width:52px;height:52px;border-radius:50%;border:2px solid #d1d5db;background:#fff;color:var(--dk);font-size:1.3rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;box-shadow:0 2px 12px rgba(0,0,0,.08)}
-.don-nb:hover{border-color:var(--or);color:var(--or);box-shadow:0 4px 20px rgba(242,101,34,.25)}
+.don{
+  background:#fdf8f0;
+  padding:60px 0 80px;
+  position:relative;
+  overflow:hidden;
+}
 
-/* Conteneur : masque ce qui dépasse */
+/* Fond sombre - coin droit via un pseudo-élément NON circulaire */
+/* On utilise une div réelle dans le HTML à la place */
+.don-bg-dark{
+  position:absolute;
+  top:0;
+  right:0;
+  width:34%;
+  height:52%;
+  background:var(--dk2) url('https://charitics.temptics.com/assets/img/donations-bg-img.jpg') center/cover;
+  background-blend-mode:multiply;
+  border-radius:0 0 0 100%;
+  z-index:0;
+}
+
+/* Header donations */
+.don-hd{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:16px;
+  position:relative;
+  z-index:3;
+  padding:0 0 48px;
+}
+.don-hl{flex:1}
+
+/* Le conteneur des cartes aussi devant */
 .dst{
   overflow:hidden;
   width:100%;
+  position:relative;
+  z-index:3;
 }
 
-/* Piste : JS gère le translateX aller-retour, pas de CSS animation */
+/* Côté droit : badge + boutons séparés */
+.don-hr{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  position:relative;
+  z-index:3;
+}
+
+/* Badge avatars sur fond sombre */
+.don-hr .dba{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  background:rgba(255,255,255,.1);
+  border:1px solid rgba(255,255,255,.15);
+  border-radius:50px;
+  padding:8px 16px 8px 8px;
+  backdrop-filter:blur(6px);
+}
+.don-hr .dlb{
+  color:#fff;
+  font-size:.85rem;
+  font-weight:600;
+  white-space:nowrap;
+}
+
+/* Avatars photos */
+.don-hr .ava{display:flex;align-items:center}
+.don-hr .av{
+  width:38px;height:38px;
+  border-radius:50%;
+  border:2px solid rgba(255,255,255,.6);
+  background-size:cover;
+  background-position:center;
+  background-color:var(--or);
+  margin-left:-10px;
+  flex-shrink:0;
+}
+.don-hr .av:first-child{margin-left:0}
+.don-hr .avc{
+  background:var(--or) !important;
+  color:#fff;
+  border-color:var(--or);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:.72rem;
+  font-weight:800;
+}
+
+/* Boutons prev/next séparés — blancs */
+.don-nav{display:flex;gap:10px}
+.don-nb{
+  width:50px;height:50px;
+  border-radius:50%;
+  border:2px solid #d1d5db;
+  background:#fff;
+  color:var(--dk);
+  font-size:1.2rem;
+  cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  transition:all .2s;
+  box-shadow:0 2px 12px rgba(0,0,0,.08);
+}
+.don-nb:hover{border-color:var(--or);color:var(--or);box-shadow:0 4px 20px rgba(242,101,34,.2)}
+
+/* Piste : JS gère le translateX */
 .dtr{
   display:flex;
   flex-wrap:nowrap;
-  gap:20px;
-  transition:transform .6s cubic-bezier(.25,.46,.45,.94);
+  gap:0;
+  transition:transform .5s cubic-bezier(.25,.46,.45,.94);
   will-change:transform;
 }
 
-/* Carte : exactement 4 visibles, basées sur .dst */
+/* Carte : 25% de .dst, padding interne crée le gap visuel */
 .dca{
-  flex:0 0 calc((100% - 60px) / 4);
-  width:calc((100% - 60px) / 4);
+  flex:0 0 25%;
+  width:25%;
+  padding:0 10px;
+  box-sizing:border-box;
+  position:relative;
+  z-index:2;
+}
+
+/* Fond blanc + arrondi sur l'intérieur de chaque carte */
+.dca > .ciw{
+  border-radius:20px 20px 0 0;
+  overflow:hidden;
+}
+.dca-wrap{
   background:#fff;
   border-radius:20px;
   overflow:hidden;
   box-shadow:0 2px 20px rgba(0,0,0,.06);
   transition:transform .3s,box-shadow .3s;
 }
-.dca:hover{transform:translateY(-5px);box-shadow:0 12px 40px rgba(0,0,0,.12)}
+/* Pour le HTML sans .dca-wrap — appliqué directement sur .dca */
+.dca:hover{transform:translateY(-5px);}
+.dca:hover > .ciw,
+.dca:hover > .cbo{box-shadow:0 12px 40px rgba(0,0,0,.12)}
 
-@media(max-width:1100px){.dca{flex:0 0 calc((100% - 40px) / 3);width:calc((100% - 40px) / 3)}}
-@media(max-width:700px){.dca{flex:0 0 calc((100% - 20px) / 2);width:calc((100% - 20px) / 2)}}
-@media(max-width:480px){.dca{flex:0 0 100%;width:100%}}
+@media(max-width:1100px){.dca{flex:0 0 33.333%;width:33.333%}}
+@media(max-width:700px){.dca{flex:0 0 50%;width:50%}}
+@media(max-width:480px){.dca{flex:0 0 90%;width:90%}}
 
-.ciw{position:relative;height:260px;overflow:hidden;border-radius:20px 20px 0 0}
+.ciw{position:relative;height:260px;overflow:hidden;border-radius:20px 20px 0 0;background:#fff}
 .ciw img{width:100%;height:100%;object-fit:cover;object-position:top center;transition:transform .4s}
 .dca:hover .ciw img{transform:scale(1.05)}
 .ctg{position:absolute;top:12px;left:12px;background:var(--or);color:#fff;padding:5px 14px;border-radius:50px;font-size:.72rem;font-weight:700}
-.cbo{padding:14px 16px 18px}
+.cbo{
+  padding:14px 16px 18px;
+  background:#fff;
+  border-radius:0 0 20px 20px;
+  box-shadow:0 4px 20px rgba(0,0,0,.06);
+  margin-bottom:0;
+}
 .cslider{position:relative;height:18px;margin:10px 0 8px}
 .cslider-track{position:absolute;top:50%;transform:translateY(-50%);left:0;right:0;height:4px;background:#e5e7eb;border-radius:4px}
 .cslider-fill{height:100%;background:var(--or);border-radius:4px;position:relative}
@@ -452,3 +565,108 @@ ul{list-style:none}
 .fli{display:flex;gap:24px}
 .fli a{color:rgba(255,255,255,.85)}
 .fli a:hover{color:#fff}
+
+/* ================================================
+   SECTION EVENT SCHEDULE
+   ================================================ */
+.evs{
+  background:var(--dk);
+  padding:70px 0 90px;
+  position:relative;
+  overflow:hidden;
+}
+
+/* En-tête */
+.evs-hd{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  flex-wrap:wrap;
+  gap:20px;
+  margin-bottom:48px;
+}
+.evs-hd .sub{color:var(--or)}
+.evs-hd .ttl{color:#fff;margin-bottom:0;max-width:540px}
+
+/* Carte blanche */
+.evs-card{
+  background:#fff;
+  border-radius:20px;
+  display:flex;
+  gap:0;
+  align-items:stretch;
+  overflow:hidden;
+  position:relative;
+  box-shadow:0 8px 40px rgba(0,0,0,.18);
+}
+
+/* Image gauche */
+.evs-img{
+  flex:0 0 380px;
+  max-width:380px;
+}
+.evs-img img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+/* Contenu texte */
+.evs-body{
+  flex:1;
+  padding:44px 48px 44px 44px;
+}
+.evs-title{
+  font-family:'Nunito',sans-serif;
+  font-weight:800;
+  font-size:1.4rem;
+  color:var(--dk);
+  margin-bottom:18px;
+}
+.evs-text{
+  font-size:.9rem;
+  color:var(--tx);
+  line-height:1.8;
+  margin-bottom:18px;
+}
+.evs-list{
+  list-style:none;
+  margin-bottom:18px;
+}
+.evs-list li{
+  font-size:.9rem;
+  font-weight:700;
+  color:var(--dk);
+  padding:6px 0;
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.evs-list li::before{
+  content:'•';
+  color:var(--dk);
+  font-size:1.2rem;
+  line-height:1;
+}
+
+/* Déco cercle orange */
+.evs-deco{
+  position:absolute;
+  right:-30px;
+  top:50%;
+  transform:translateY(-50%);
+  width:100px;
+  height:200px;
+  border:4px solid var(--or);
+  border-radius:50%;
+  pointer-events:none;
+}
+
+/* Responsive */
+@media(max-width:900px){
+  .evs-card{flex-direction:column}
+  .evs-img{flex:none;max-width:100%;height:280px}
+  .evs-body{padding:28px 24px}
+  .evs-deco{display:none}
+}

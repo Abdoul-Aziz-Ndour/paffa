@@ -9,7 +9,6 @@
 </head>
 <body>
 
-<!-- NAVBAR -->
 <nav class="nav" id="nav">
 <a href="#" class="nlo"><span class="lh">&#9829;</span> Charitics</a>
 <div class="nri">
@@ -30,55 +29,27 @@
 </div>
 </nav>
 
-<!-- MOBILE MENU OVERLAY -->
 <div class="mob-overlay" id="mobOverlay" onclick="closeMobMenu()"></div>
-
-<!-- MOBILE MENU DRAWER -->
 <div class="mob-menu" id="mobMenu">
   <div class="mob-head">
     <div class="mob-logo"><span style="color:var(--or)">&#9829;</span> Charitics</div>
     <button class="mob-close" onclick="closeMobMenu()">&#10005;</button>
   </div>
   <nav class="mob-nav">
-    <div class="mob-item">
-      <div class="mob-link" onclick="toggleMobItem(this)">Home <span class="chv">&#9662;</span></div>
-      <div class="mob-sub"><a href="#home" onclick="closeMobMenu()">Home 1</a><a href="#about" onclick="closeMobMenu()">Home 2</a></div>
-    </div>
-    <div class="mob-item">
-      <div class="mob-link" onclick="closeMobMenu();window.location.hash='about'">About</div>
-    </div>
-    <div class="mob-item">
-      <div class="mob-link" onclick="toggleMobItem(this)">Pages <span class="chv">&#9662;</span></div>
-      <div class="mob-sub"><a href="#volunteer" onclick="closeMobMenu()">Services</a><a href="#donation" onclick="closeMobMenu()">Projects</a><a href="#team" onclick="closeMobMenu()">Team</a></div>
-    </div>
-    <div class="mob-item">
-      <div class="mob-link" onclick="toggleMobItem(this)">Donation <span class="chv">&#9662;</span></div>
-      <div class="mob-sub"><a href="#donation" onclick="closeMobMenu()">Listing</a><a href="#donation" onclick="closeMobMenu()">Details</a></div>
-    </div>
-    <div class="mob-item">
-      <div class="mob-link" onclick="toggleMobItem(this)">Event <span class="chv">&#9662;</span></div>
-      <div class="mob-sub"><a href="#event" onclick="closeMobMenu()">Events</a><a href="#event" onclick="closeMobMenu()">Details</a></div>
-    </div>
-    <div class="mob-item">
-      <div class="mob-link" onclick="toggleMobItem(this)">Blog <span class="chv">&#9662;</span></div>
-      <div class="mob-sub"><a href="#blog" onclick="closeMobMenu()">Blogs</a><a href="#blog" onclick="closeMobMenu()">Details</a></div>
-    </div>
-    <div class="mob-item">
-      <div class="mob-link" onclick="closeMobMenu();window.location.hash='about'">Contact</div>
-    </div>
+    <div class="mob-item"><div class="mob-link" onclick="toggleMobItem(this)">Home <span class="chv">&#9662;</span></div><div class="mob-sub"><a href="#home" onclick="closeMobMenu()">Home 1</a><a href="#about" onclick="closeMobMenu()">Home 2</a></div></div>
+    <div class="mob-item"><div class="mob-link" onclick="closeMobMenu();window.location.hash='about'">About</div></div>
+    <div class="mob-item"><div class="mob-link" onclick="toggleMobItem(this)">Pages <span class="chv">&#9662;</span></div><div class="mob-sub"><a href="#volunteer" onclick="closeMobMenu()">Services</a><a href="#donation" onclick="closeMobMenu()">Projects</a><a href="#team" onclick="closeMobMenu()">Team</a></div></div>
+    <div class="mob-item"><div class="mob-link" onclick="toggleMobItem(this)">Donation <span class="chv">&#9662;</span></div><div class="mob-sub"><a href="#donation" onclick="closeMobMenu()">Listing</a><a href="#donation" onclick="closeMobMenu()">Details</a></div></div>
+    <div class="mob-item"><div class="mob-link" onclick="toggleMobItem(this)">Event <span class="chv">&#9662;</span></div><div class="mob-sub"><a href="#event" onclick="closeMobMenu()">Events</a><a href="#event" onclick="closeMobMenu()">Details</a></div></div>
+    <div class="mob-item"><div class="mob-link" onclick="toggleMobItem(this)">Blog <span class="chv">&#9662;</span></div><div class="mob-sub"><a href="#blog" onclick="closeMobMenu()">Blogs</a><a href="#blog" onclick="closeMobMenu()">Details</a></div></div>
+    <div class="mob-item"><div class="mob-link" onclick="closeMobMenu();window.location.hash='about'">Contact</div></div>
   </nav>
   <div class="mob-footer">
     <p class="mob-follow">Follow us</p>
-    <div class="mob-social">
-      <a href="#">f</a>
-      <a href="#"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.849L1.254 2.25H8.08l4.259 5.634 5.905-5.634zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
-      <a href="#"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
-      <a href="#"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg></a>
-    </div>
+    <div class="mob-social"><a href="#">f</a><a href="#"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.849L1.254 2.25H8.08l4.259 5.634 5.905-5.634zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a href="#"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a><a href="#"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg></a></div>
   </div>
 </div>
 
-<!-- HERO -->
 <section class="hero" id="home">
 <div class="hri"><div class="hwb"></div></div>
 <div class="hic" id="heroImg"><img src="https://charitics.temptics.com/assets/img/banner-img.png" alt=""/></div>
@@ -96,8 +67,8 @@
 <div class="hcw ctr">
 <div class="hco">
 <p class="htg"><span>&#9829;</span> Change The World Together</p>
-<h1 class="hti">For The People &amp;<br>Cause You Care About</h1>
-<p class="hde">It is a long established fact that a reader will be distracted lorem the readable content of a page when looking at layout.</p>
+<h1 class="hti">ABDOUL AZIZ &amp;<br> NDOUR</h1>
+<p class="hde">Developpeur Web </p>
 <div class="hac">
 <a href="#" class="bto lg"><span class="barr">&raquo;</span> Make Donation</a>
 <div class="dba"><div class="ava"><div class="av av1"></div><div class="av av2"></div><div class="av av3"></div><div class="av avc">2M</div></div><span class="dlb">Active donors</span></div>
@@ -106,7 +77,6 @@
 </div>
 </section>
 
-<!-- ABOUT -->
 <section class="about sec" id="about">
 <div class="ctr abi">
 <div class="ahw">
@@ -136,34 +106,47 @@
 </div>
 </section>
 
-<!-- DONATIONS -->
+<!-- DONATIONS — Design image 2 : fond sombre arrondi en haut à droite -->
 <section class="don" id="donation">
+<!-- Fond sombre côté droit avec arrondi gauche -->
+<div class="don-bg-dark"></div>
 <div class="ctr">
 <div class="don-hd">
-  <div class="don-hl"><p class="sub">Help &amp; Donate us</p><h2 class="ttl" style="margin-bottom:0">Inspiring and Helping for Better Lifestyle</h2></div>
+  <div class="don-hl">
+    <p class="sub">Help &amp; Donate us</p>
+    <h2 class="ttl" style="margin-bottom:0">Inspiring and Helping for Better Lifestyle</h2>
+  </div>
   <div class="don-hr">
-    <div class="dba" style="background:rgba(27,32,48,.85);border-radius:50px;padding:10px 18px">
-      <div class="ava"><div class="av av1"></div><div class="av av2"></div><div class="av av3"></div><div class="av avc">2M</div></div>
+    <!-- Badge avatars avec vraies photos + 2M -->
+    <div class="dba">
+      <div class="ava">
+        <div class="av" style="background-image:url('https://i.pravatar.cc/48?img=5')"></div>
+        <div class="av" style="background-image:url('https://i.pravatar.cc/48?img=20')"></div>
+        <div class="av" style="background-image:url('https://i.pravatar.cc/48?img=35')"></div>
+        <div class="av avc">2M</div>
+      </div>
       <span class="dlb">Active donors</span>
     </div>
-    <div class="don-nav"><button class="don-nb" onclick="slD(-1)">&#8592;</button><button class="don-nb" onclick="slD(1)">&#8594;</button></div>
+    <!-- Boutons de navigation séparés -->
+    <div class="don-nav">
+      <button class="don-nb" onclick="slD(-1)">&#8592;</button>
+      <button class="don-nb" onclick="slD(1)">&#8594;</button>
+    </div>
   </div>
 </div>
 </div>
 <div class="ctr">
 <div class="dst">
 <div class="dtr" id="dtr">
-<div class="dca"><div class="ciw"><img src="https://charitics.temptics.com/assets/img/donations-bg-img.jpg" alt=""/><span class="ctg">Foods</span></div><div class="cbo"><div class="cpct">55%</div><div class="cslider"><div class="cslider-track"><div class="cslider-fill" style="width:55%"><div class="cslider-thumb"></div></div></div></div><div class="cpi"><span>Raised : <strong>$25,000</strong></span><span>Goal : <strong>$30,000</strong></span></div><h3 class="cti"><a href="#">Lifes kills for Children in South African peoples</a></h3><p class="cds">We work together to make a lasting difference, helping people. With kindness and hard work</p><a href="#" class="don-btn">Donate now <span class="don-arr">↗</span></a></div></div>
-<div class="dca"><div class="ciw"><img src="https://charitics.temptics.com/assets/img/donation-4.jpg" alt=""/><span class="ctg">Foods</span></div><div class="cbo"><div class="cpct">95%</div><div class="cslider"><div class="cslider-track"><div class="cslider-fill" style="width:95%"><div class="cslider-thumb"></div></div></div></div><div class="cpi"><span>Raised : <strong>$25,000</strong></span><span>Goal : <strong>$30,000</strong></span></div><h3 class="cti"><a href="#">Lifes kills for Children in South African peoples</a></h3><p class="cds">We work together to make a lasting difference, helping people. With kindness and hard work</p><a href="#" class="don-btn">Donate now <span class="don-arr">↗</span></a></div></div>
-<div class="dca"><div class="ciw"><img src="https://charitics.temptics.com/assets/img/donation-3.jpg" alt=""/><span class="ctg">Foods</span></div><div class="cbo"><div class="cpct">50%</div><div class="cslider"><div class="cslider-track"><div class="cslider-fill" style="width:50%"><div class="cslider-thumb"></div></div></div></div><div class="cpi"><span>Raised : <strong>$25,000</strong></span><span>Goal : <strong>$30,000</strong></span></div><h3 class="cti"><a href="#">Lifes kills for Children in South African peoples</a></h3><p class="cds">We work together to make a lasting difference, helping people. With kindness and hard work</p><a href="#" class="don-btn">Donate now <span class="don-arr">↗</span></a></div></div>
-<div class="dca"><div class="ciw"><img src="https://charitics.temptics.com/assets/img/donation-2.jpg" alt=""/><span class="ctg">Foods</span></div><div class="cbo"><div class="cpct">64%</div><div class="cslider"><div class="cslider-track"><div class="cslider-fill" style="width:64%"><div class="cslider-thumb"></div></div></div></div><div class="cpi"><span>Raised : <strong>$25,000</strong></span><span>Goal : <strong>$30,000</strong></span></div><h3 class="cti"><a href="#">Lifes kills for Children in South African peoples</a></h3><p class="cds">We work together to make a lasting difference, helping people. With kindness and hard work</p><a href="#" class="don-btn">Donate now <span class="don-arr">↗</span></a></div></div>
-<div class="dca"><div class="ciw"><img src="https://charitics.temptics.com/assets/img/donations-bg-img.jpg" alt=""/><span class="ctg">Health</span></div><div class="cbo"><div class="cpct">72%</div><div class="cslider"><div class="cslider-track"><div class="cslider-fill" style="width:72%"><div class="cslider-thumb"></div></div></div></div><div class="cpi"><span>Raised : <strong>$18,000</strong></span><span>Goal : <strong>$25,000</strong></span></div><h3 class="cti"><a href="#">Lifes kills for Children in South African peoples</a></h3><p class="cds">We work together to make a lasting difference, helping people. With kindness and hard work</p><a href="#" class="don-btn">Donate now <span class="don-arr">↗</span></a></div></div>
+<div class="dca"><div class="ciw"><img src="https://charitics.temptics.com/assets/img/donations-bg-img.jpg" alt=""/><span class="ctg">Foods</span></div><div class="cbo"><div class="cpct">55%</div><div class="cslider"><div class="cslider-track"><div class="cslider-fill" style="width:55%"><div class="cslider-thumb"></div></div></div></div><div class="cpi"><span>Raised : <strong>$25,000</strong></span><span>Goal : <strong>$30,000</strong></span></div><h3 class="cti"><a href="#">Lifes kills for Children in South African peoples</a></h3><p class="cds">We work together to make a lasting difference, helping people. With kindness and hard work</p><a href="#" class="don-btn">Donate now <span class="don-arr">&#8599;</span></a></div></div>
+<div class="dca"><div class="ciw"><img src="https://charitics.temptics.com/assets/img/donation-4.jpg" alt=""/><span class="ctg">Foods</span></div><div class="cbo"><div class="cpct">95%</div><div class="cslider"><div class="cslider-track"><div class="cslider-fill" style="width:95%"><div class="cslider-thumb"></div></div></div></div><div class="cpi"><span>Raised : <strong>$25,000</strong></span><span>Goal : <strong>$30,000</strong></span></div><h3 class="cti"><a href="#">Lifes kills for Children in South African peoples</a></h3><p class="cds">We work together to make a lasting difference, helping people. With kindness and hard work</p><a href="#" class="don-btn">Donate now <span class="don-arr">&#8599;</span></a></div></div>
+<div class="dca"><div class="ciw"><img src="https://charitics.temptics.com/assets/img/donation-3.jpg" alt=""/><span class="ctg">Foods</span></div><div class="cbo"><div class="cpct">50%</div><div class="cslider"><div class="cslider-track"><div class="cslider-fill" style="width:50%"><div class="cslider-thumb"></div></div></div></div><div class="cpi"><span>Raised : <strong>$25,000</strong></span><span>Goal : <strong>$30,000</strong></span></div><h3 class="cti"><a href="#">Lifes kills for Children in South African peoples</a></h3><p class="cds">We work together to make a lasting difference, helping people. With kindness and hard work</p><a href="#" class="don-btn">Donate now <span class="don-arr">&#8599;</span></a></div></div>
+<div class="dca"><div class="ciw"><img src="https://charitics.temptics.com/assets/img/donation-2.jpg" alt=""/><span class="ctg">Foods</span></div><div class="cbo"><div class="cpct">64%</div><div class="cslider"><div class="cslider-track"><div class="cslider-fill" style="width:64%"><div class="cslider-thumb"></div></div></div></div><div class="cpi"><span>Raised : <strong>$25,000</strong></span><span>Goal : <strong>$30,000</strong></span></div><h3 class="cti"><a href="#">Lifes kills for Children in South African peoples</a></h3><p class="cds">We work together to make a lasting difference, helping people. With kindness and hard work</p><a href="#" class="don-btn">Donate now <span class="don-arr">&#8599;</span></a></div></div>
+<div class="dca"><div class="ciw"><img src="https://charitics.temptics.com/assets/img/donations-bg-img.jpg" alt=""/><span class="ctg">Health</span></div><div class="cbo"><div class="cpct">72%</div><div class="cslider"><div class="cslider-track"><div class="cslider-fill" style="width:72%"><div class="cslider-thumb"></div></div></div></div><div class="cpi"><span>Raised : <strong>$18,000</strong></span><span>Goal : <strong>$25,000</strong></span></div><h3 class="cti"><a href="#">Lifes kills for Children in South African peoples</a></h3><p class="cds">We work together to make a lasting difference, helping people. With kindness and hard work</p><a href="#" class="don-btn">Donate now <span class="don-arr">&#8599;</span></a></div></div>
 </div>
 </div>
 <div class="sdots" id="dDots"></div>
 </div>
-
-<!-- DONATE BOX -->
 <div class="dfs-wrap">
   <div class="dfw">
     <div class="dam">
@@ -190,10 +173,8 @@
   </div>
 </div>
 </div>
-</div>
 </section>
 
-<!-- STATS -->
 <section class="sts" id="stats">
 <div class="ctr"><div class="stg">
 <div class="stc" onmouseenter="showStat(this)" onmouseleave="hideStat(this)" data-img="https://charitics.temptics.com/assets/img/gallery-item-1.png"><div class="stc-bg"></div><div class="stc-inner"><div class="sti"><svg width="44" height="44" fill="none" stroke="white" stroke-width="1.4" viewBox="0 0 64 64"><circle cx="20" cy="22" r="7"/><circle cx="44" cy="22" r="7"/><circle cx="32" cy="20" r="7"/><path d="M6 54c0-8 6-14 14-14h4"/><path d="M58 54c0-8-6-14-14-14h-4"/><path d="M18 54c0-8 6-14 14-14s14 6 14 14"/></svg></div><div class="stn">260+</div><div class="stl">Total Happy Children</div><span class="stc-dot"></span></div></div>
@@ -203,7 +184,6 @@
 </div></div>
 </section>
 
-<!-- EVENTS -->
 <section class="evt" id="event">
 <div class="eps"></div><div class="edr"></div>
 <div class="ctr">
@@ -217,7 +197,6 @@
 </div>
 </section>
 
-<!-- VOLUNTEER -->
 <section class="vol sec" id="volunteer">
 <div class="ctr voi">
 <div class="viw"><div class="vbp"></div><div class="vim"><img src="https://charitics.temptics.com/assets/img/why-join.jpg" alt=""/></div></div>
@@ -233,7 +212,6 @@
 </div>
 </section>
 
-<!-- TEAM -->
 <section class="tem sec" id="team">
 <div class="ctr">
 <div class="teh"><div><p class="sub">Our Team</p><h2 class="ttl">Skilled Legal Professionals Dedicated to You</h2></div><a href="#" class="bto lg"><span class="barr">&raquo;</span> Join With us</a></div>
@@ -246,26 +224,24 @@
 </div>
 </section>
 
-<!-- TESTIMONIALS -->
 <section class="tst sec" id="testimonials">
 <div class="ctr"><div class="sh"><p class="sub">Testimonials</p><h2 class="ttl">What They Are Talking About Charitics</h2></div></div>
 <div class="tst-wrap">
 <div class="tsg" id="tsg">
-  <div class="tsk"><div class="tss">&#9733;&#9733;&#9733;&#9733;&#9734;</div><p class="tst2">Praesent ut lacus a velit tincidunt aliquam a eget urna. Sed ullamcorper tristique nisl at phaetra turpis accumsan et etiam eu sollicitudin eros. In imperdiet accumsan.</p><div class="tsf"><div class="tsau"><img src="https://charitics.temptics.com/assets/img/member-1.jpg" alt=""/><div><strong>Esther Howard</strong><span>Web Designer</span></div></div><div class="tsq">&#10077;</div></div></div>
-  <div class="tsk"><div class="tss">&#9733;&#9733;&#9733;&#9733;&#9734;</div><p class="tst2">Praesent ut lacus a velit tincidunt aliquam a eget urna. Sed ullamcorper tristique nisl at phaetra turpis accumsan et etiam eu sollicitudin eros. In imperdiet accumsan.</p><div class="tsf"><div class="tsau"><img src="https://charitics.temptics.com/assets/img/member-2.jpg" alt=""/><div><strong>Esther Howard</strong><span>Web Designer</span></div></div><div class="tsq">&#10077;</div></div></div>
-  <div class="tsk"><div class="tss">&#9733;&#9733;&#9733;&#9733;&#9734;</div><p class="tst2">Praesent ut lacus a velit tincidunt aliquam a eget urna. Sed ullamcorper tristique nisl at phaetra turpis accumsan et etiam eu sollicitudin eros. In imperdiet accumsan.</p><div class="tsf"><div class="tsau"><img src="https://charitics.temptics.com/assets/img/member-3.jpg" alt=""/><div><strong>Esther Howard</strong><span>Web Designer</span></div></div><div class="tsq">&#10077;</div></div></div>
-  <div class="tsk"><div class="tss">&#9733;&#9733;&#9733;&#9733;&#9734;</div><p class="tst2">Praesent ut lacus a velit tincidunt aliquam a eget urna. Sed ullamcorper tristique nisl at phaetra turpis accumsan et etiam eu sollicitudin eros. In imperdiet accumsan.</p><div class="tsf"><div class="tsau"><img src="https://charitics.temptics.com/assets/img/member-4.jpg" alt=""/><div><strong>Esther Howard</strong><span>Web Designer</span></div></div><div class="tsq">&#10077;</div></div></div>
-  <div class="tsk"><div class="tss">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="tst2">Praesent ut lacus a velit tincidunt aliquam a eget urna. Sed ullamcorper tristique nisl at phaetra turpis accumsan et etiam eu sollicitudin eros. In imperdiet accumsan.</p><div class="tsf"><div class="tsau"><img src="https://charitics.temptics.com/assets/img/member-1.jpg" alt=""/><div><strong>James Martin</strong><span>Developer</span></div></div><div class="tsq">&#10077;</div></div></div>
-  <div class="tsk"><div class="tss">&#9733;&#9733;&#9733;&#9733;&#9734;</div><p class="tst2">Praesent ut lacus a velit tincidunt aliquam a eget urna. Sed ullamcorper tristique nisl at phaetra turpis accumsan et etiam eu sollicitudin eros. In imperdiet accumsan.</p><div class="tsf"><div class="tsau"><img src="https://charitics.temptics.com/assets/img/member-1.jpg" alt=""/><div><strong>Esther Howard</strong><span>Web Designer</span></div></div><div class="tsq">&#10077;</div></div></div>
-  <div class="tsk"><div class="tss">&#9733;&#9733;&#9733;&#9733;&#9734;</div><p class="tst2">Praesent ut lacus a velit tincidunt aliquam a eget urna. Sed ullamcorper tristique nisl at phaetra turpis accumsan et etiam eu sollicitudin eros. In imperdiet accumsan.</p><div class="tsf"><div class="tsau"><img src="https://charitics.temptics.com/assets/img/member-2.jpg" alt=""/><div><strong>Esther Howard</strong><span>Web Designer</span></div></div><div class="tsq">&#10077;</div></div></div>
-  <div class="tsk"><div class="tss">&#9733;&#9733;&#9733;&#9733;&#9734;</div><p class="tst2">Praesent ut lacus a velit tincidunt aliquam a eget urna. Sed ullamcorper tristique nisl at phaetra turpis accumsan et etiam eu sollicitudin eros. In imperdiet accumsan.</p><div class="tsf"><div class="tsau"><img src="https://charitics.temptics.com/assets/img/member-3.jpg" alt=""/><div><strong>Esther Howard</strong><span>Web Designer</span></div></div><div class="tsq">&#10077;</div></div></div>
-  <div class="tsk"><div class="tss">&#9733;&#9733;&#9733;&#9733;&#9734;</div><p class="tst2">Praesent ut lacus a velit tincidunt aliquam a eget urna. Sed ullamcorper tristique nisl at phaetra turpis accumsan et etiam eu sollicitudin eros. In imperdiet accumsan.</p><div class="tsf"><div class="tsau"><img src="https://charitics.temptics.com/assets/img/member-4.jpg" alt=""/><div><strong>Esther Howard</strong><span>Web Designer</span></div></div><div class="tsq">&#10077;</div></div></div>
-  <div class="tsk"><div class="tss">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="tst2">Praesent ut lacus a velit tincidunt aliquam a eget urna. Sed ullamcorper tristique nisl at phaetra turpis accumsan et etiam eu sollicitudin eros. In imperdiet accumsan.</p><div class="tsf"><div class="tsau"><img src="https://charitics.temptics.com/assets/img/member-1.jpg" alt=""/><div><strong>James Martin</strong><span>Developer</span></div></div><div class="tsq">&#10077;</div></div></div>
+  <div class="tsk"><div class="tss">&#9733;&#9733;&#9733;&#9733;&#9734;</div><p class="tst2">Praesent ut lacus a velit tincidunt aliquam a eget urna. Sed ullamcorper tristique nisl at phaetra turpis accumsan et etiam eu sollicitudin eros.</p><div class="tsf"><div class="tsau"><img src="https://charitics.temptics.com/assets/img/member-1.jpg" alt=""/><div><strong>Esther Howard</strong><span>Web Designer</span></div></div><div class="tsq">&#10077;</div></div></div>
+  <div class="tsk"><div class="tss">&#9733;&#9733;&#9733;&#9733;&#9734;</div><p class="tst2">Praesent ut lacus a velit tincidunt aliquam a eget urna. Sed ullamcorper tristique nisl at phaetra turpis accumsan et etiam eu sollicitudin eros.</p><div class="tsf"><div class="tsau"><img src="https://charitics.temptics.com/assets/img/member-2.jpg" alt=""/><div><strong>Esther Howard</strong><span>Web Designer</span></div></div><div class="tsq">&#10077;</div></div></div>
+  <div class="tsk"><div class="tss">&#9733;&#9733;&#9733;&#9733;&#9734;</div><p class="tst2">Praesent ut lacus a velit tincidunt aliquam a eget urna. Sed ullamcorper tristique nisl at phaetra turpis accumsan et etiam eu sollicitudin eros.</p><div class="tsf"><div class="tsau"><img src="https://charitics.temptics.com/assets/img/member-3.jpg" alt=""/><div><strong>Esther Howard</strong><span>Web Designer</span></div></div><div class="tsq">&#10077;</div></div></div>
+  <div class="tsk"><div class="tss">&#9733;&#9733;&#9733;&#9733;&#9734;</div><p class="tst2">Praesent ut lacus a velit tincidunt aliquam a eget urna. Sed ullamcorper tristique nisl at phaetra turpis accumsan et etiam eu sollicitudin eros.</p><div class="tsf"><div class="tsau"><img src="https://charitics.temptics.com/assets/img/member-4.jpg" alt=""/><div><strong>Esther Howard</strong><span>Web Designer</span></div></div><div class="tsq">&#10077;</div></div></div>
+  <div class="tsk"><div class="tss">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="tst2">Praesent ut lacus a velit tincidunt aliquam a eget urna. Sed ullamcorper tristique nisl at phaetra turpis accumsan et etiam eu sollicitudin eros.</p><div class="tsf"><div class="tsau"><img src="https://charitics.temptics.com/assets/img/member-1.jpg" alt=""/><div><strong>James Martin</strong><span>Developer</span></div></div><div class="tsq">&#10077;</div></div></div>
+  <div class="tsk"><div class="tss">&#9733;&#9733;&#9733;&#9733;&#9734;</div><p class="tst2">Praesent ut lacus a velit tincidunt aliquam a eget urna. Sed ullamcorper tristique nisl at phaetra turpis accumsan et etiam eu sollicitudin eros.</p><div class="tsf"><div class="tsau"><img src="https://charitics.temptics.com/assets/img/member-1.jpg" alt=""/><div><strong>Esther Howard</strong><span>Web Designer</span></div></div><div class="tsq">&#10077;</div></div></div>
+  <div class="tsk"><div class="tss">&#9733;&#9733;&#9733;&#9733;&#9734;</div><p class="tst2">Praesent ut lacus a velit tincidunt aliquam a eget urna. Sed ullamcorper tristique nisl at phaetra turpis accumsan et etiam eu sollicitudin eros.</p><div class="tsf"><div class="tsau"><img src="https://charitics.temptics.com/assets/img/member-2.jpg" alt=""/><div><strong>Esther Howard</strong><span>Web Designer</span></div></div><div class="tsq">&#10077;</div></div></div>
+  <div class="tsk"><div class="tss">&#9733;&#9733;&#9733;&#9733;&#9734;</div><p class="tst2">Praesent ut lacus a velit tincidunt aliquam a eget urna. Sed ullamcorper tristique nisl at phaetra turpis accumsan et etiam eu sollicitudin eros.</p><div class="tsf"><div class="tsau"><img src="https://charitics.temptics.com/assets/img/member-3.jpg" alt=""/><div><strong>Esther Howard</strong><span>Web Designer</span></div></div><div class="tsq">&#10077;</div></div></div>
+  <div class="tsk"><div class="tss">&#9733;&#9733;&#9733;&#9733;&#9734;</div><p class="tst2">Praesent ut lacus a velit tincidunt aliquam a eget urna. Sed ullamcorper tristique nisl at phaetra turpis accumsan et etiam eu sollicitudin eros.</p><div class="tsf"><div class="tsau"><img src="https://charitics.temptics.com/assets/img/member-4.jpg" alt=""/><div><strong>Esther Howard</strong><span>Web Designer</span></div></div><div class="tsq">&#10077;</div></div></div>
+  <div class="tsk"><div class="tss">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="tst2">Praesent ut lacus a velit tincidunt aliquam a eget urna. Sed ullamcorper tristique nisl at phaetra turpis accumsan et etiam eu sollicitudin eros.</p><div class="tsf"><div class="tsau"><img src="https://charitics.temptics.com/assets/img/member-1.jpg" alt=""/><div><strong>James Martin</strong><span>Developer</span></div></div><div class="tsq">&#10077;</div></div></div>
 </div>
 </div>
 </section>
 
-<!-- BLOG -->
 <section class="blg sec" id="blog">
 <div class="ctr bgi">
 <div class="bgl">
@@ -284,7 +260,6 @@
 </div>
 </section>
 
-<!-- GALLERY -->
 <section class="gal">
 <div class="gal-wrap">
 <div class="gtk">
@@ -294,7 +269,6 @@
   <div class="gcc"><img src="https://charitics.temptics.com/assets/img/gallery-item-4.png" alt=""/><div class="gcc-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div></div>
   <div class="gcc"><img src="https://charitics.temptics.com/assets/img/gallery-item-5.png" alt=""/><div class="gcc-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div></div>
   <div class="gcc"><img src="https://charitics.temptics.com/assets/img/gallery-item-6.png" alt=""/><div class="gcc-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div></div>
-  <!-- Doublons boucle infinie -->
   <div class="gcc"><img src="https://charitics.temptics.com/assets/img/gallery-item-1.png" alt=""/><div class="gcc-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div></div>
   <div class="gcc"><img src="https://charitics.temptics.com/assets/img/gallery-item-2.png" alt=""/><div class="gcc-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div></div>
   <div class="gcc"><img src="https://charitics.temptics.com/assets/img/gallery-item-3.png" alt=""/><div class="gcc-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div></div>
@@ -305,43 +279,22 @@
 </div>
 </section>
 
-<!-- FOOTER -->
 <div class="fcb" style="position:relative;z-index:10">
 <div class="fbi">
   <div class="fbi2"><div class="fico"><svg width="20" height="20" fill="white" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><small>Address</small><strong>4648 Rocky Road Philadelphia PA, 1920</strong></div></div>
-  <div class="fbi2"><div class="fico"><svg width="20" height="20" fill="white" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div><small>Send Email</small><strong><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ff96919990bf9c979e8d968b969c8cd19c9092">[email&#160;protected]</a></strong></div></div>
+  <div class="fbi2"><div class="fico"><svg width="20" height="20" fill="white" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div><small>Send Email</small><strong><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="10797e767f507378716279647973633e737f7d">[email&#160;protected]</a></strong></div></div>
   <div class="fbi2"><div class="fico"><svg width="20" height="20" fill="white" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.29 6.29l1.42-1.42a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><div><small>Call Emergency</small><strong>+88 0123 654 99</strong></div></div>
 </div>
 </div>
 
 <footer class="ftr">
 <div class="fma"><div class="ctr fgr">
-  <div class="fc">
-    <a href="#" class="flo"><span class="lh">&#9829;</span> Charitics</a>
-    <p style="margin-bottom:20px;line-height:1.8;font-size:.88rem">Phasellus ultricies aliquam volutpat ullamcorper laoreet neque, a lacinia curabitur lacinia mollis</p>
-    <div class="fso"><a href="#">f</a><a href="#"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.849L1.254 2.25H8.08l4.259 5.634 5.905-5.634zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a href="#">in</a><a href="#"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg></a></div>
-  </div>
-  <div class="fc">
-    <h4>Quick Links</h4>
-    <ul><li><a href="#">About Us</a></li><li><a href="#">Our Services</a></li><li><a href="#">Our Blogs</a></li><li><a href="#">FAQ'S</a></li><li><a href="#">Contact Us</a></li></ul>
-  </div>
-  <div class="fc">
-    <h4>Recent Posts</h4>
-    <div class="rpo"><img src="https://charitics.temptics.com/assets/img/blog-2.jpg" alt=""/><div><div class="rpo-info"><small>&#128197; May 12, 2025</small></div><a href="#">There are many vario ns of passages of</a></div></div>
-    <div class="rpo"><img src="https://charitics.temptics.com/assets/img/blog-1.jpg" alt=""/><div><div class="rpo-info"><small>&#128197; May 12, 2025</small></div><a href="#">There are many vario ns of passages of</a></div></div>
-  </div>
-  <div class="fc">
-    <h4>Contact Us</h4>
-    <div class="fct-line"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="#"><span class="__cf_email__" data-cfemail="3e575058517e5d565f4c574a575d4d105d5153">[email&#160;protected]</span></a></div>
-    <div class="fct-line"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.29 6.29l1.42-1.42a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="#">123-456-7890</a></div>
-    <div class="nws"><input type="email" placeholder="Your Email Address"/><button>&rarr;</button></div>
-    <label class="pck"><input type="checkbox" style="margin:0"/> I agree with the <a href="#">Privacy Policy</a></label>
-  </div>
+  <div class="fc"><a href="#" class="flo"><span class="lh">&#9829;</span> Charitics</a><p style="margin-bottom:20px;line-height:1.8;font-size:.88rem">Phasellus ultricies aliquam volutpat ullamcorper laoreet neque, a lacinia curabitur lacinia mollis</p><div class="fso"><a href="#">f</a><a href="#"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.849L1.254 2.25H8.08l4.259 5.634 5.905-5.634zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a href="#">in</a><a href="#"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg></a></div></div>
+  <div class="fc"><h4>Quick Links</h4><ul><li><a href="#">About Us</a></li><li><a href="#">Our Services</a></li><li><a href="#">Our Blogs</a></li><li><a href="#">FAQ'S</a></li><li><a href="#">Contact Us</a></li></ul></div>
+  <div class="fc"><h4>Recent Posts</h4><div class="rpo"><img src="https://charitics.temptics.com/assets/img/blog-2.jpg" alt=""/><div><div class="rpo-info"><small>&#128197; May 12, 2025</small></div><a href="#">There are many variations of passages of</a></div></div><div class="rpo"><img src="https://charitics.temptics.com/assets/img/blog-1.jpg" alt=""/><div><div class="rpo-info"><small>&#128197; May 12, 2025</small></div><a href="#">There are many variations of passages of</a></div></div></div>
+  <div class="fc"><h4>Contact Us</h4><div class="fct-line"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="#"><span class="__cf_email__" data-cfemail="2e474048416e4d464f5c475a474d5d004d4143">[email&#160;protected]</span></a></div><div class="fct-line"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.29 6.29l1.42-1.42a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="#">123-456-7890</a></div><div class="nws"><input type="email" placeholder="Your Email Address"/><button>&rarr;</button></div><label class="pck"><input type="checkbox" style="margin:0"/> I agree with the <a href="#">Privacy Policy</a></label></div>
 </div></div>
-<div class="fbt"><div class="ctr fbi3">
-  <p style="color:#fff">&copy; 2026 Charitics. All rights reserved</p>
-  <div class="fli"><a href="#">Terms &amp; Conditions</a><a href="#">Privacy Policy</a></div>
-</div></div>
+<div class="fbt"><div class="ctr fbi3"><p style="color:#fffff">&copy; 2026 Charitics. All rights reserved</p><div class="fli"><a href="#">Terms &amp; Conditions</a><a href="#">Privacy Policy</a></div></div></div>
 </footer>
 
 <script src="script.js"></script>
